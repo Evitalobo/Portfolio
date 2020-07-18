@@ -1,6 +1,92 @@
 import React from 'react';
-import { Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Button, Card, CardImg, CardText, CardBody, CardTitle, Breadcrumb, BreadcrumbItem ,Modal, ModalHeader, ModalBody,
+    Form, FormGroup, Input, Label } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import { Control , LocalForm ,Errors } from 'react-redux-form';
+
+const lowerBound = (val) => val && (val.length >= 2);
+const upperBound = (val) => !val || (val.length <= 15);
+
+class CommentForm extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            isModalOpen:false
+        };
+        this.toggleModal = this.toggleModal.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    
+    }
+
+    toggleModal() {
+        this.setState({
+            isModalOpen: !this.state.isModalOpen
+        });
+    }
+
+    handleSubmit(values) {
+        alert(`Current State is: ${JSON.stringify(values)}`);
+        this.toggleModal();
+    }
+
+    render(){
+        return(
+            <React.Fragment>
+                <Button outline onClick={this.toggleModal}>
+                <i className="fa fa-pencil fa-lg"  /> Submit Comment
+                </Button>
+
+                <Modal isOpen={this.state.isModalOpen} toggle={this.toggleModal}>
+                    <ModalHeader toggle={this.toggleModal}>Submit Comment</ModalHeader>
+                    <ModalBody>
+                    <LocalForm onSubmit={values => this.handleSubmit(values)}>
+                            <div className="form-group">
+                                <Label htmlFor="rating">Rating</Label>
+                                <Control.select model=".rating" id="rating" name="rating" className="form-control" >
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                </Control.select>
+                            </div> 
+
+                            <div className="form-group">
+                            <Label htmlFor="author">Your Name</Label>
+                                <Control.text 
+                                model=".author" 
+                                id="author" 
+                                name="author" 
+                                className="form-control" 
+                                placeholder="Your Name" 
+                                validators={{ lowerBound , upperBound }}/>
+                                <Errors 
+                                    model=".author"
+                                    show="touched"
+                                    components="div"
+                                    className='text-danger'
+                                    messages = {{
+                                        lowerBound : 'Must be at least 2 characters',
+                                        upperBound : 'Must be 15 characters or less'
+                                    }}
+                                />
+                            </div> 
+             
+                            <div className="form-group">
+                            <Label htmlFor="text">Comment</Label>
+                                <Control.textarea model=".text" id="text" name="text" rows= "6" className="form-control" placeholder="Comment" />
+                            </div> 
+
+                            <Button type="submit" value="submit" color="primary">Submit</Button>
+                        </LocalForm>
+                    </ModalBody>
+                </Modal>
+            </React.Fragment>
+        );
+    }
+}
+    
+    
 
     function RenderCampsite({campsite}) {
             return(
@@ -27,13 +113,16 @@ import { Link } from 'react-router-dom';
                                 <p>{comment.text}</p>
                                 <p> -- {comment.author}, {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(comment.date)))}</p>
                             </div>
+                            
                         );
                     })}
+                    <CommentForm />
                 </div>
             )
         };
         return <div/>
     }
+
 
     function CampsiteInfo(props) {
         if (props.campsite) {
@@ -52,12 +141,15 @@ import { Link } from 'react-router-dom';
                     <div className="row">
                         <RenderCampsite campsite={props.campsite} />
                         <RenderComments comments={props.comments} />
+                        
                     </div>
                 </div>
             );
         }
         return <div />;
     }
+
+  
 
 
 export default CampsiteInfo;
