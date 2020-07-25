@@ -169,7 +169,7 @@ import { Control, LocalForm } from 'react-redux-form';
                                 </Col>
                             </Row>
                             <Row className="form-group">
-                                <Label htmlFor="feedback" md={2}>Your Feedback</Label>
+                                <Label htmlFor="feedback" md={2}>Your Message</Label>
                                 <Col md={10}>
                                     <Control.textarea model=".feedback" id="feedback" name="feedback"
                                         rows="12"

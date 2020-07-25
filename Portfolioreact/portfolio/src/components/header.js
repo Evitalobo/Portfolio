@@ -52,7 +52,7 @@ class Header extends Component {
     <div className="sidenav d-none d-lg-block d-xl-block">
     <NavLink className="nav-link" to="/about"> About </NavLink>   
     <NavLink className="nav-link" to="/design"> Design </NavLink>
-    <NavLink className="nav-link" to="/games"> Games </NavLink>
+    <NavLink className="nav-link" to="/directory"> Games </NavLink>
     <NavLink className="nav-link" to="/contact"> Contact </NavLink>
       </div>
 

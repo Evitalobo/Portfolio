@@ -1,0 +1,383 @@
+a { color: white; 
+  padding-bottom:16px;
+  margin-bottom: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif; 
+  background-image: linear-gradient(to bottom,#C8F9F3 ,#DAFBF7 ,#E3F0F2 );
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1{
+  font-size: 6vw;
+  letter-spacing: 8px;
+  font-weight: 500;
+}
+
+
+h2 {
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 900;
+}
+h4 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  color: white;
+  padding:16px;
+  
+} 
+
+h5 {
+  font-size: 24px;
+  letter-spacing: 5px;
+  color: white;
+}
+
+
+.jumbotron {
+  padding: 20px;   
+  background-color: white;
+  color: #0C171C;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.navbar{
+  background-color: #0C171C;
+  padding: 4px; 
+}
+
+.navbar a:hover{
+  color: #FFB347;
+  text-decoration: underline;
+}
+
+.sidenav {
+  height: 50%;
+  width: 250px;
+  margin-top:15em;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #0C171C;
+  overflow-x: hidden;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.sidenav a {
+  font-size: 1.5em;
+  letter-spacing: 4px;
+  color: white;
+  font-weight: 700;
+  padding-top:.7em;
+  padding-bottom: .5   em;
+  display: block;
+  text-align: center;
+  
+}
+
+.sidenav a:hover {
+  color:#FFB347;
+  text-decoration: underline;
+
+}
+
+.carousel {
+  border: solid #0C171C;
+}
+
+
+.lcard {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  padding-top: 3em;
+  padding-bottom: 3em ;
+  text-align: center;
+  border: solid 1px #FFB347;
+  
+  
+}
+
+.rcard {
+  margin-top: 5em;
+  margin-bottom: 5em;
+  margin-right: auto;
+  padding-top: 3em;
+  padding-bottom: 3em ;
+  border: solid 1px #FFB347;
+}
+
+.outlineIn{
+  border: solid 1px #FFB347;
+}
+
+.imgstyle{
+  max-width: 90%;
+}
+
+@media (min-width: 100px) and (max-width: 991.9px){
+  .carouselObj {
+      margin: auto;
+      margin-top: 30px;
+      display: grid;
+      align-items: center;
+  }   
+  .aboutme{
+      text-align: center;
+      margin: auto;
+      margin-top: 3em;
+      margin-bottom: 3em;
+  }
+  .lcard {
+      margin-top: 5em;
+      margin-bottom: 5em;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 3em;
+      padding-bottom: 3em ;
+      text-align: center;
+      border: solid 1px #FFB347;
+      
+      
+  }
+  
+  .rcard {
+      margin-top: 5em;
+      margin-bottom: 5em;
+      margin-right: auto;
+       margin-left: auto;
+      padding-top: 3em;
+      padding-bottom: 3em ;
+      border: solid 1px #FFB347;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .jumbotron {
+      padding: 30px;
+      margin-left:100px;
+      margin-right:100px;
+      margin-top: 50px;
+      margin-bottom: 100px;
+      background-color: white;
+      color: #0C171C;
+      font-weight: 500;
+      
+  } 
+  .sidenav {
+      height: 42%;
+      width: 16%;
+  }
+
+  .carouselObj {
+    margin: auto;
+    display: grid;
+    align-items: center;
+    margin-right: 150px;
+    background: #FFB347;
+    padding: 20px;
+    margin-top: -10em;
+}   
+.aboutme{
+    text-align: center;
+    margin: auto;
+    margin-top: -35em;
+    margin-left: 150px;
+    margin-bottom: 5em;
+    padding: 40px;
+    background: white;
+    border: solid 1px #FFB347;
+}
+  
+  .dividerspace{
+      margin-top: 300px;
+      padding-left: auto;
+      padding-right: auto;
+      text-align: center;
+      
+  }
+  .lcard {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-left: auto;
+      margin-right: 2em;
+      padding-top: 3em;
+      padding-bottom: 3em ;
+      
+      
+  }
+  
+  .rcard {
+      margin-top: 100px;
+      margin-bottom: 100px;
+      margin-left: auto;
+      margin-right: 2em;
+      padding-top: 3em;
+      padding-bottom: 3em ;
+  }
+  
+  
+}
+
+@media (min-width: 1200px) and (max-width: 1399px){
+  .jumbotron {
+      padding: 50px;
+      padding-bottom:50px;
+      margin-left:100px;
+      margin-right:100px;
+      margin-bottom: 0;
+      background-color: white;
+      color: #0C171C;
+      font-weight: 500;
+      
+  } 
+
+  .sidenav {
+      height: 38%;
+      width: 15%;
+  }
+
+  .carouselObj {
+    margin: auto;
+    display: grid;
+    align-items: center;
+    margin-right: 230px;
+    background: #FFB347;
+    padding: 20px;
+    margin-top: -10em;
+}   
+.aboutme{
+    text-align: center;
+    margin: auto;
+    margin-top: -15em;
+    margin-left: 160px;
+    margin-bottom: 5em;
+    padding: 40px;
+    background: white;
+    border: solid 1px #FFB347;
+}
+
+  .dividerspace{
+      margin-top: 200px;
+      
+  }
+  
+  .lcard {
+      margin-top: 7em;
+      margin-bottom: 7em;
+      margin-left: 10em;
+      padding-top: 7em;
+      padding-bottom: 4em ;
+      background-color: white;
+  }
+  
+  .rcard {
+      margin-top: 7em;
+      margin-bottom: 7em;
+      margin-left: 15em;
+      padding-top: 7em;
+      padding-bottom: 4em ;
+  }
+  
+  
+}
+
+@media (min-width: 1400px)and (max-width: 1999px){
+  
+  .jumbotron {
+      padding: 30px;
+      margin: 100px;
+      background-color: white;
+      color: #0C171C;
+      font-weight: 500;
+      text-align: center;
+      
+  } 
+
+  .sidenav {
+      height: 44%;
+      width: 15%;
+  }
+  .carouselObj {
+    margin: auto;
+    display: grid;
+    align-items: center;
+    margin-right: 250px;
+    background: #FFB347;
+    padding: 20px;
+    margin-top: -10em;
+}   
+.aboutme{
+    text-align: center;
+    margin: auto;
+    margin-top: -25em;
+    margin-left: 150px;
+    margin-bottom: 5em;
+    padding: 40px;
+    background: white;
+    border: solid 1px #FFB347;
+}
+  .dividerspace{
+      margin-top: 500px;
+  }   
+  .align{
+    margin-top: -800px;
+    text-align: center;
+    padding: 30px;
+    margin: auto;
+    margin-left: 250px;
+}   
+  
+  .lcard {
+      margin-top: 4em;
+      margin-bottom: 4em;
+      margin-left: 25em;
+      padding-top: 4em;
+      padding-bottom: 4em ;
+  }
+  
+
+  .rcard {
+      margin-top: 4em;
+      margin-bottom: 4em;
+      margin-left:10em;
+      padding-top: 4em;
+      padding-bottom: 4em ;
+  }
+}
+
+.right {
+    
+  margin-left: 10em;
+  padding-top: 4em;
+  padding-bottom: 4em ;
+ 
+}
+
+.breadAlign{
+  margin-left: 10em;
+  background-color: #FFB347;
+}
+
+footer h3{
+  color: #E3F0F2;
+}
+
+.site-footer {
+  background-color: #0C171C ;
+  padding: 16px ;
+  
+}
