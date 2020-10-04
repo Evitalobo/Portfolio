@@ -36,51 +36,45 @@ class Header extends Component {
     render() {
         return (
             <React.Fragment>
-                <Jumbotron fluid>
-                    <div className="container">
-                        <div className="row">
-                            <div className="col col-lg-8 ">        
+             
+
+
+
+
+      <Navbar light sticky="top" expand="md" className =" d-block ">
+        <div className="container ">
+        <div className="row">
+                            <div className="col-6 mr-5">        
                                 <h1> evitA</h1>
                                     <div className= "col ml-5">
                                         <h1>  loBo</h1>
                                     </div>   
                                  </div>
                              </div>
-                         </div>
-                </Jumbotron>
-
-    <div className="sidenav d-none d-lg-block d-xl-block">
-    <NavLink className="nav-link" to="/about"> About </NavLink>   
-    <NavLink className="nav-link" to="/design"> Design </NavLink>
-    <NavLink className="nav-link" to="/directory"> Games </NavLink>
-    <NavLink className="nav-link" to="/contact"> Contact </NavLink>
-      </div>
-
-
-
-      <Navbar dark sticky="top" expand="md" className =" d-block d-lg-none ">
-        <div className="container">
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                        <Nav navbar className = "navbar-nav mr-4  text-right">
+                       <h3> <Nav navbar className = "navbar-nav ml-5 text-right ">
                                 <NavItem >
-                                    <NavLink className="nav-link" to="/about"> About
+                                    <NavLink className="nav-link " to="/about"> About
+                                    </NavLink>
+                                </NavItem>
+
+                               <NavItem>
+                                    <NavLink className="nav-link " to="/design">Design
+                                    </NavLink>
+                                </NavItem>
+
+                                <NavItem>
+                                    <NavLink className="nav-link " to="/games">Games
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link" to="/design">Design
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/games">Games
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink className="nav-link" to="/contact"> Contact
+                                    <NavLink className="nav-link " to="/contact"> Contact
                                     </NavLink>
                                 </NavItem>
                            
                             </Nav>
+                            </h3>
                         </Collapse>
                         </div>
                     </Navbar>

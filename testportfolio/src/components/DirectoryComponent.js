@@ -2,19 +2,19 @@ import React from 'react';
 import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem, CardBody, CardText } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-function RenderDirectoryItem({campsite}) {
+function RenderDirectoryItem({game}) {
     return (
         <div className = "container">
-        <Card className = "lcard col-10 col-m-8 text-center card flex-row flex-wrap">
+        <Card className = "lcard col-12 col-lg-11 text-center card flex-row flex-wrap">
             
-           <div className ="align-self-center  col-6">
-            <Link to={`/directory/${campsite.id}`}>
-                <CardImg className="imgstyle rounded" src={campsite.image} alt={campsite.name} />
+           <div className ="align-self-center col col-md-6">
+            <Link to={`/games/${game.id}`}>
+                <CardImg className="imgstyle rounded" src={game.image} alt={game.name} />
             </Link>
             </div>
-            <CardBody className= "col-6">
-                <CardTitle className= "text-dark">{campsite.name}</CardTitle>
-                <CardText className= "text-center pl-2 py-4">{campsite.description}</CardText>
+            <CardBody className= "col col-md-6">
+              <h5>  <CardTitle className= "text-dark">{game.name}</CardTitle></h5>
+               <h2> <CardText className= "text-center pl-2 py-4">{game.description}</CardText> </h2>
             
             </CardBody>
         </Card>
@@ -24,10 +24,10 @@ function RenderDirectoryItem({campsite}) {
 
 function Directory(props) {
 
-    const directory = props.campsites.map(campsite => {
+    const directory = props.games.map(game => {
         return (
-            <div key={campsite.id} className="  ">
-                <RenderDirectoryItem campsite={campsite} />
+            <div key={game.id} className="  ">
+                <RenderDirectoryItem game={game} />
             </div>
         );
     });
@@ -36,9 +36,9 @@ function Directory(props) {
         <div className="container">
             <div className="row">
                 <div className="col text-center">
-                    <Breadcrumb className = "col-10.5 breadAlign">
+                    <Breadcrumb className = "col-12 breadAlign">
                         <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
-                        <BreadcrumbItem active>Directory</BreadcrumbItem>
+                        <BreadcrumbItem active>Games</BreadcrumbItem>
                     </Breadcrumb>
 
                 </div>

@@ -3,9 +3,25 @@ a { color: white;
   margin-bottom: 16px;
 }
 
+p {
+  font-size: 1vw;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+
+li{
+  font-size: 1.5vw;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
+}
+
 body {
   font-family: "Open Sans", sans-serif; 
-  background-image: linear-gradient(to bottom,#C8F9F3 ,#DAFBF7 ,#E3F0F2 );
+  background-image: linear-gradient(to bottom,#fffae1 ,#fff4d2 );
 }
 
 h1, h2, h3 {
@@ -13,49 +29,54 @@ h1, h2, h3 {
 }
 
 h1{
-  font-size: 6vw;
+  font-size: 4vw;
   letter-spacing: 8px;
   font-weight: 500;
 }
 
 
 h2 {
-  font-size: 18px;
-  letter-spacing: 2px;
+  font-size: 1.5vw;
+  letter-spacing: 1.2px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 2;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 1.8vw;
   letter-spacing: 3px;
-  font-weight: 900;
+  font-weight: 700;
+  
 }
 h4 {
-  font-size: 20px;
-  letter-spacing: 4px;
+  font-size: 2vw;
+  letter-spacing: 3px;
+  margin:0rem;
   color: white;
   padding:16px;
+ 
   
 } 
 
 h5 {
-  font-size: 24px;
-  letter-spacing: 5px;
-  color: white;
+  font-size: 2vw;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color:#0C171C;
+  text-align: left;
 }
 
-
-.jumbotron {
-  padding: 20px;   
-  background-color: white;
-  color: #0C171C;
-  font-weight: 500;
-  text-align: center;
-  margin-bottom: 0;
+h6 {
+  font-size: 1vw;
+  letter-spacing: 3px;
+  font-weight: 400;
+  color: gray;
 }
 
 .navbar{
-  background-color: #0C171C;
   padding: 4px; 
+  margin-top: 0rem;
 }
 
 .navbar a:hover{
@@ -63,276 +84,255 @@ h5 {
   text-decoration: underline;
 }
 
-.sidenav {
-  height: 50%;
-  width: 250px;
-  margin-top:15em;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #0C171C;
-  overflow-x: hidden;
-  padding-top: 20px;
-  text-align: center;
-}
-
-.sidenav a {
-  font-size: 1.5em;
-  letter-spacing: 4px;
-  color: white;
-  font-weight: 700;
-  padding-top:.7em;
-  padding-bottom: .5   em;
-  display: block;
-  text-align: center;
-  
-}
-
-.sidenav a:hover {
-  color:#FFB347;
-  text-decoration: underline;
-
-}
-
-.carousel {
-  border: solid #0C171C;
-}
-
 
 .lcard {
   margin-top: 5em;
   margin-bottom: 5em;
+  margin-left:1rem;
+  margin-right:1rem;
   padding-top: 3em;
   padding-bottom: 3em ;
   text-align: center;
   border: solid 1px #FFB347;
-  
-  
 }
 
-.rcard {
-  margin-top: 5em;
-  margin-bottom: 5em;
-  margin-right: auto;
-  padding-top: 3em;
-  padding-bottom: 3em ;
-  border: solid 1px #FFB347;
+.titlecard {
+  margin: auto;
+  padding-top: 1em;
+  padding-bottom: 1em ;
+  text-align: center;
+  background: white;
+  border: dashed 3px #FFB347;
 }
 
 .outlineIn{
   border: solid 1px #FFB347;
 }
 
+.imgcenter{
+  margin: auto;
+  text-align: center;
+  width:90%;
+  height: 90%;
+  display:block;
+}
+
+.banner{
+  margin: auto;
+  text-align: center;
+
+  max-height: 20%;
+    max-width:80%;
+  display:block;
+}
+
 .imgstyle{
   max-width: 90%;
 }
 
-@media (min-width: 100px) and (max-width: 991.9px){
+.trailer{
+  width: 90%;
+  height: 90%;
+  margin:auto;
+ 
+}
+
+@media (min-width: 100px) and (max-width: 992px){
+
+
+  h2 {
+    font-size: 2vw;
+  }
+
+  h5{
+    font-size: 2.5vw;
+  }
+
+  .navbar{
+    background-color: white;
+    color: #0C171C;
+    padding-bottom: 1rem; 
+    padding-top: 1rem; 
+    width: 100%;
+    position: sticky;
+    padding-left: 2rem;
+    padding-right:2rem;
+  }
+
   .carouselObj {
       margin: auto;
-      margin-top: 30px;
-      display: grid;
       align-items: center;
+      padding: 5px;
+      background: #FFB347;
   }   
+
   .aboutme{
       text-align: center;
-      margin: auto;
       margin-top: 3em;
-      margin-bottom: 3em;
+      margin-left: 6rem;
+      margin-right: 0rem;
+      margin-bottom: 7rem;
+      background: white;
+      border: solid 1px #FFB347;
+      padding: 1rem;
   }
   .lcard {
       margin-top: 5em;
       margin-bottom: 5em;
-      margin-left: auto;
-      margin-right: auto;
+      margin-left: 1rem;
+      margin-right: 1rem;
       padding-top: 3em;
       padding-bottom: 3em ;
       text-align: center;
       border: solid 1px #FFB347;
-      
+      background-color: white;
       
   }
   
-  .rcard {
-      margin-top: 5em;
-      margin-bottom: 5em;
-      margin-right: auto;
-       margin-left: auto;
-      padding-top: 3em;
-      padding-bottom: 3em ;
-      border: solid 1px #FFB347;
-  }
+  .breadAlign{
+    margin-left:0rem ;
+    background-color: #FFB347;
+    
+    }
 }
 
-@media (min-width: 992px) and (max-width: 1199px){
-  .jumbotron {
-      padding: 30px;
-      margin-left:100px;
-      margin-right:100px;
-      margin-top: 50px;
-      margin-bottom: 100px;
-      background-color: white;
-      color: #0C171C;
-      font-weight: 500;
-      
-  } 
-  .sidenav {
-      height: 42%;
-      width: 16%;
-  }
 
-  .carouselObj {
-    margin: auto;
-    display: grid;
-    align-items: center;
-    margin-right: 150px;
-    background: #FFB347;
-    padding: 20px;
-    margin-top: -10em;
-}   
+@media (min-width: 992px) and (max-width: 1199px){
+
+  .navbar {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    background-color: white;
+    color: #0C171C;
+    font-weight: 500;
+    position:-webkit-sticky; 
+    position:sticky;
+    top:0rem;
+    z-index: 1;
+} 
+  
+
+.carouselObj {
+  margin: auto;
+  align-items: center;
+  padding: 5px;
+  background: #FFB347;
+}  
+
 .aboutme{
-    text-align: center;
-    margin: auto;
-    margin-top: -35em;
-    margin-left: 150px;
-    margin-bottom: 5em;
-    padding: 40px;
+    text-align: block;
+    margin-top: 4rem;
+    margin-left: 6rem;
+    margin-right:-2rem;
+    margin-bottom: 8rem;
+    padding: 20px;
     background: white;
     border: solid 1px #FFB347;
 }
-  
-  .dividerspace{
-      margin-top: 300px;
-      padding-left: auto;
-      padding-right: auto;
-      text-align: center;
-      
-  }
+
+
+
   .lcard {
-      margin-top: 100px;
+      margin-top: -15rem;
       margin-bottom: 100px;
-      margin-left: auto;
-      margin-right: 2em;
-      padding-top: 3em;
-      padding-bottom: 3em ;
-      
+      margin-left: 1rem;
+      margin-right: 1rem;
+      background: rgb(175, 136, 136);
       
   }
   
-  .rcard {
-      margin-top: 100px;
-      margin-bottom: 100px;
-      margin-left: auto;
-      margin-right: 2em;
-      padding-top: 3em;
-      padding-bottom: 3em ;
-  }
-  
-  
+  .breadAlign{
+    margin-left: 0rem;
+    background-color: #FFB347;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1399px){
-  .jumbotron {
-      padding: 50px;
-      padding-bottom:50px;
-      margin-left:100px;
-      margin-right:100px;
-      margin-bottom: 0;
-      background-color: white;
-      color: #0C171C;
-      font-weight: 500;
-      
-  } 
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    background-color: white;
+    color: #0C171C;
+    font-weight: 500;
+    position:-webkit-sticky; 
+    position:sticky;
+    top:0rem;
+    z-index: 1;
+} 
 
-  .sidenav {
-      height: 38%;
-      width: 15%;
-  }
+.carouselObj {
+  margin: auto;
+  align-items: center;
+  padding: 5px;
+  background: #FFB347;
+}  
 
-  .carouselObj {
-    margin: auto;
-    display: grid;
-    align-items: center;
-    margin-right: 230px;
-    background: #FFB347;
-    padding: 20px;
-    margin-top: -10em;
-}   
 .aboutme{
-    text-align: center;
-    margin: auto;
-    margin-top: -15em;
-    margin-left: 160px;
-    margin-bottom: 5em;
-    padding: 40px;
+    text-align: block;
+    margin-top: 4rem;
+    margin-left: 7rem;
+    margin-right:-2rem;
+    margin-bottom: 8rem;
+    padding: 20px;
     background: white;
     border: solid 1px #FFB347;
 }
 
-  .dividerspace{
-      margin-top: 200px;
-      
-  }
+
   
   .lcard {
-      margin-top: 7em;
-      margin-bottom: 7em;
-      margin-left: 10em;
-      padding-top: 7em;
-      padding-bottom: 4em ;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding-top: 2rem;
+      padding-bottom: 2rem ;
       background-color: white;
   }
   
-  .rcard {
-      margin-top: 7em;
-      margin-bottom: 7em;
-      margin-left: 15em;
-      padding-top: 7em;
-      padding-bottom: 4em ;
+  .breadAlign{
+    margin-left:0rem;
+    background-color: #FFB347;
+    position:sticky-top;
+   
   }
-  
-  
 }
 
 @media (min-width: 1400px)and (max-width: 1999px){
-  
-  .jumbotron {
-      padding: 30px;
-      margin: 100px;
-      background-color: white;
-      color: #0C171C;
-      font-weight: 500;
-      text-align: center;
-      
-  } 
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    background-color: white;
+    color: #0C171C;
+    font-weight: 500;
+    position:-webkit-sticky; 
+    position:sticky;
+    top:0rem;
+    z-index: 1;
+} 
 
-  .sidenav {
-      height: 44%;
-      width: 15%;
-  }
-  .carouselObj {
-    margin: auto;
-    display: grid;
-    align-items: center;
-    margin-right: 250px;
-    background: #FFB347;
-    padding: 20px;
-    margin-top: -10em;
-}   
+.carouselObj {
+  margin: auto;
+  align-items: center;
+  padding: 5px;
+  background: #FFB347;
+}  
+
 .aboutme{
-    text-align: center;
-    margin: auto;
-    margin-top: -25em;
-    margin-left: 150px;
-    margin-bottom: 5em;
-    padding: 40px;
-    background: white;
-    border: solid 1px #FFB347;
+  text-align: center;
+  margin-top: 7rem;
+  margin-left: 10rem;
+  margin-bottom: 12rem;
+  padding: 1.5rem;
+  background: white;
+  border: solid 1px #FFB347;
 }
-  .dividerspace{
-      margin-top: 500px;
-  }   
+
+ 
   .align{
     margin-top: -800px;
     text-align: center;
@@ -341,35 +341,115 @@ h5 {
     margin-left: 250px;
 }   
   
-  .lcard {
-      margin-top: 4em;
-      margin-bottom: 4em;
-      margin-left: 25em;
-      padding-top: 4em;
-      padding-bottom: 4em ;
-  }
-  
-
-  .rcard {
-      margin-top: 4em;
-      margin-bottom: 4em;
-      margin-left:10em;
-      padding-top: 4em;
-      padding-bottom: 4em ;
-  }
-}
-
-.right {
-    
-  margin-left: 10em;
-  padding-top: 4em;
-  padding-bottom: 4em ;
- 
+.lcard {
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding-top: 2em;
+  padding-bottom: 2em ;
+  background-color: white;
 }
 
 .breadAlign{
-  margin-left: 10em;
-  background-color: #FFB347;
+margin-left: 0rem;
+background-color: #FFB347;
+}
+
+h1{
+  font-size: 3vw;
+}
+
+h2,h3 {
+  font-size: 1vw;
+}
+
+h4{
+  font-size: 1.5vw;
+}
+
+h5{
+  font-size: 1.2vw;
+}
+
+
+}
+
+@media (min-width: 2000px){
+
+  h1{
+    font-size: 3vw;
+  }
+
+  h2,h3 {
+    font-size: 1vw;
+  }
+
+  h4{
+    font-size: 1.5vw;
+  }
+
+  h5{
+    font-size: 1.2vw;
+  }
+
+  .navbar {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
+    background-color: white;
+    color: #0C171C;
+    font-weight: 500;
+    position:-webkit-sticky; 
+    position:sticky;
+    top:0rem;
+    z-index: 1;
+} 
+
+  .carouselObj {
+    margin:auto;
+    padding: 10px;
+    background: #FFB347;
+}   
+
+.aboutme{
+    text-align: block;
+    margin-top: 8rem;
+    margin-left: 10rem;
+    margin-bottom: 8rem;
+    padding: 2rem;
+    background: white;
+    border: solid 1px #FFB347;
+}
+
+
+  
+  .lcard {
+      margin-top: 4rem;
+      margin-bottom: 3rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      padding-top: 2em;
+      padding-bottom: 2em ;
+      background-color: white;
+  }
+  
+  .breadAlign{
+    margin-left: 0rem;
+    background-color: #FFB347;
+  }
+}
+
+
+.lcard {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  padding: 2rem;
+  
+  background: white;
+
 }
 
 footer h3{
@@ -381,3 +461,4 @@ footer h3{
   padding: 16px ;
   
 }
+

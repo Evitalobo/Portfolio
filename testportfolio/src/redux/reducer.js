@@ -1,13 +1,14 @@
-import { CAMPSITES } from '../shared/campsites';
-import { COMMENTS } from '../shared/comments';
-import { PARTNERS } from '../shared/partners';
-import { PROMOTIONS } from '../shared/promotions';
+import { GAMES } from '../shared/games';
+import { GAMEINFO } from '../shared/gameinfo';
+import { DESIGNS } from '../shared/designs';
+import { DESIGNINFO } from '../shared/designinfo';
 
 export const initialState = {
-    campsites: CAMPSITES,
-    comments: COMMENTS,
-    partners: PARTNERS,
-    promotions: PROMOTIONS
+    games: GAMES,
+    gameinfo: GAMEINFO,
+    designs: DESIGNS,
+    designinfo: DESIGNINFO
+
 };
 
 export const Reducer = (state = initialState, action) => {
