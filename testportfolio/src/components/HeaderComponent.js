@@ -1,7 +1,5 @@
-import React, { Component }  from 'react';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron,
-    Button, Modal, ModalHeader, ModalBody,
-    Form, FormGroup, Input, Label } from 'reactstrap';
+import React, { Component}  from 'react';
+import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 
 class Header extends Component {
@@ -44,37 +42,38 @@ class Header extends Component {
       <Navbar light sticky="top" expand="md" className =" d-block ">
         <div className="container ">
         <div className="row">
-                            <div className="col-6 mr-5">        
+                            <div className="col-6 mr-5 mt-4">        
                                 <h1> evitA</h1>
                                     <div className= "col ml-5">
                                         <h1>  loBo</h1>
                                     </div>   
                                  </div>
                              </div>
-                        <NavbarToggler onClick={this.toggleNav} />
+                        <NavbarToggler className = "mt-3 " onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
-                       <h3> <Nav navbar className = "navbar-nav ml-5 text-right ">
+                        <Nav navbar className = "navbar-nav mt-3 text-right" >
+                   
                                 <NavItem >
-                                    <NavLink className="nav-link " to="/about"> About
+                                    <NavLink className="nav-link ml-3" to="/about"> <h5>About </h5>
                                     </NavLink>
                                 </NavItem>
 
                                <NavItem>
-                                    <NavLink className="nav-link " to="/design">Design
+                                    <NavLink className="nav-link ml-3" to="/design"><h5>Design</h5>
                                     </NavLink>
                                 </NavItem>
 
                                 <NavItem>
-                                    <NavLink className="nav-link " to="/games">Games
+                                    <NavLink className="nav-link ml-3" to="/games"><h5>Games</h5>
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
-                                    <NavLink className="nav-link " to="/contact"> Contact
+                                    <NavLink className="nav-link ml-3" to="/contact"> <h5>Contact</h5>
                                     </NavLink>
                                 </NavItem>
-                           
+                     
                             </Nav>
-                            </h3>
+                            
                         </Collapse>
                         </div>
                     </Navbar>

@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import Directory from './DirectoryComponent';
-import GameInfo from './CampsiteInfoComponents';
+import Directory from './GameComponent';
+import GameInfo from './GameInfoComponents';
 import DesignInfo from './DesignInfoComponents';
 import Header from './HeaderComponent';
 import Footer from './FooterComponent';
-import Project from './HomeComponent';
+import Project from './DesignComponent';
 import Contact from './ContactComponent';
 import About from './AboutComponent';
 import { GAMES } from '../shared/games';

@@ -32,29 +32,24 @@ import '../App.css';
                                 <br />
                                 <p>{info.problem1} </p>
                                 <br />
-                                <h5> Roles & Responsibilities </h5>
+                                <h5> Roles </h5>
                                 <p>{info.roles} </p>
                                 <ul>
+                                    <li>{info.role0}</li>
                                     <li>{info.role1}</li>
                                     <li>{info.role2}</li>
                                 </ul>
                                 <br/>
-                                <h5> Timeline</h5>
-                                <p>{info.timeline}</p>
+                            
                                 <br />
                                 <h5> Tools</h5>
                                 <p>{info.tools}</p>
                                 
                                 <br />
-                                <h5> Users & Audience </h5>
-                                <p>{info.user} </p>
-                                <br />
-                                <h5> Scope & Constraints </h5>
-                                <p>{info.scope} </p>
-
+                            
                                 
                                 <br />
-                                <h5> Research and Testing Methods </h5>
+                                <h5> Methodologies </h5>
                                 <p>{info.research} </p>
                                 <br />
 
@@ -67,40 +62,48 @@ import '../App.css';
                                 <h5> {info.title1}</h5>
                                 <br />
 
-                                {info.bullet1_3}  
                                 <p>{info.process1} </p>
+                                {info.bullet1_3}  
                                 {info.bullet2_3}
+                                 {info.bullet3_3}
+                                 {info.bullet4_3}
+                                 <br></br>
                                 <p>{info.process1_2} </p>
-                                {info.bullet3_3}
-                                <p>{info.process1_3} </p>
-                                {info.bullet4_3}
-                                <p>{info.process1_4} </p>
+                               
+                                
+                                
+                            
 
                                 <br />
+                                
                                 {info.image1} 
                                 <br />
-                                <h6><p>{info.caption1} </p></h6>
+                                <h2>{info.caption1} </h2>
+                                <p>{info.process1_3} </p>
                                 <br />
                                 <br />
                                
                                 <h5> {info.title2}</h5>
+
                                 <br />
                                
                                 <p>{info.process2} </p>
                                 {info.image2}
-                                {info.image3}
+                               
                                 
                                 <br /> <br />
-                                <h6><p>{info.caption2} </p></h6>
+                                <h2>{info.caption2} </h2>
 
-                            
+                                <p>{info.process1_4} </p>
+                                {info.image3}
+                                {info.image4}
                                 <br />
                                 <h5> {info.title3}</h5>
                                 <br />
                                 <p>{info.process3} </p>
                                
                         
-                                {info.image4}
+                             
                                 {info.image5} 
                                 
                                 <br />

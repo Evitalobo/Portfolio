@@ -13,7 +13,7 @@ function RenderDirectoryItem({game}) {
             </Link>
             </div>
             <CardBody className= "col col-md-6">
-              <h5>  <CardTitle className= "text-dark">{game.name}</CardTitle></h5>
+              <h5>  <CardTitle className= "text-center text-dark">{game.name}</CardTitle></h5>
                <h2> <CardText className= "text-center pl-2 py-4">{game.description}</CardText> </h2>
             
             </CardBody>

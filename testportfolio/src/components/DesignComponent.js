@@ -14,7 +14,7 @@ function RenderDirectoryItem({design}) {
             </Link>
             </div>
             <CardBody className= "col col-md-6">
-              <h5>  <CardTitle className= "text-dark">{design.name}</CardTitle></h5>
+              <h5>  <CardTitle className= " text-center text-dark">{design.name}</CardTitle></h5>
                <h2> <CardText className= "text-center pl-2 py-4">{design.description}</CardText> </h2>
             
             </CardBody>
@@ -41,13 +41,10 @@ function Project(props) {
                         <BreadcrumbItem><Link to="/home">Home</Link></BreadcrumbItem>
                         <BreadcrumbItem active>Design</BreadcrumbItem>
                     </Breadcrumb>
-                    
-                    <h1 className = "text-center p-3 "> A collection of Evita's UI/UX projects </h1>
 
                 </div>
             </div>
                 {project}
-                <h1>       <NavLink className = "h1 text-center p-3 card"  to="/games">Checkout my Game projects </NavLink> </h1>
                                     <br/><br/>
         </div>
     );

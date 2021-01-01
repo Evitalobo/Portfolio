@@ -78,7 +78,7 @@ const items = [
         activeIndex={activeIndex}
         next={next}
         previous={previous}
-        className ="carouselObj col-4 col-md-3 col-xl-2 "
+        className ="carouselObj col-10 col-s-10 col-md-3 col-lg-4 col-xl-3 "
       >
         <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={goToIndex} />
         {slides}
@@ -92,12 +92,12 @@ const items = [
 function RenderAbout() {
     return (
      
-            <div class="aboutme col-10 col-md-5 col-lg-5 col-xl-6">
+            <div className = "aboutme col-10 col-md-7 col-lg-6 col-xl-6">
                 <h2>
-                  Evita is a UI/UX designer, game designer and front end developer. They graduated from UCSC with a Computer Science:
-                  Game Design(B.S.) degree. They spent much of their time at university creating a wide variety of games - focusing on human centric design and working on iterative design. They are currently attending a UI/UX Design and a Front-End Bootcamp to build applications 
-                  that users could easily engage with. When they are not creating/ redesigning apps, they can be 
-                  found making art, gardening  and spending time in nature.
+                Evita is a UI/UX engineer and front-end developer looking for a full-time job.​
+<p/>Whether it is creating games, or front-end UI, Evita's work always incorporates human-centric, UX elements  to make the overall product user-friendly and immersive. 
+<p/>Evita is a recent graduate from University of California- Santa Cruz (BS in Computer Science – Game Design). Due to COVID, They are currently freelancing and enhancing their skillset through two virtual courses:  Springboard UI/UX Design Career track and NuCamp Front-end development boot camp.​
+<p/>When they are not focusing on tech, I can be found painting, jewelry making, gardening and spending time in nature. 
                 </h2>
         </div>
 
